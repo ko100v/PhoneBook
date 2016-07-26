@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2103AEAA1D45473800D44DF3 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103AEA91D45473800D44DF3 /* Country.swift */; };
+		2103AEB01D45478D00D44DF3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2103AEAF1D45478D00D44DF3 /* APIManager.swift */; };
+		210670DE1D46059700EC9DA7 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210670DD1D46059700EC9DA7 /* BaseModel.swift */; };
+		210670E21D4605E200EC9DA7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210670E11D4605E200EC9DA7 /* User.swift */; };
+		210670E51D46060F00EC9DA7 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210670E41D46060F00EC9DA7 /* Contact.swift */; };
+		210670E71D46149200EC9DA7 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210670E61D46149200EC9DA7 /* Dimensions.swift */; };
+		210670EA1D46163200EC9DA7 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210670E91D46163200EC9DA7 /* SearchEngine.swift */; };
+		2108307B1D4252200033FE7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210830791D4252200033FE7F /* Main.storyboard */; };
+		2108307D1D4252200033FE7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2108307C1D4252200033FE7F /* Assets.xcassets */; };
+		210830801D4252200033FE7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2108307E1D4252200033FE7F /* LaunchScreen.storyboard */; };
+		210830901D42529D0033FE7F /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2108308F1D42529D0033FE7F /* BaseController.swift */; };
+		210830941D4252EB0033FE7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210830931D4252EB0033FE7F /* AppDelegate.swift */; };
+		210830981D42534C0033FE7F /* PhoneBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210830971D42534C0033FE7F /* PhoneBookViewController.swift */; };
+		2108309D1D42557C0033FE7F /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2108309C1D42557C0033FE7F /* NewContactViewController.swift */; };
+		210830A01D425BE30033FE7F /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2108309F1D425BE30033FE7F /* CountriesViewController.swift */; };
+		210830A31D425C1E0033FE7F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210830A21D425C1E0033FE7F /* App.swift */; };
+		21C32AE41D45244700AA20E3 /* PBTextFIeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C32AE31D45244700AA20E3 /* PBTextFIeld.swift */; };
+		21FF323F1D454F230056DBF1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FF323D1D454F230056DBF1 /* Realm.framework */; };
+		21FF32401D454F230056DBF1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21FF323D1D454F230056DBF1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		21FF32411D454F230056DBF1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FF323E1D454F230056DBF1 /* RealmSwift.framework */; };
+		21FF32421D454F230056DBF1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21FF323E1D454F230056DBF1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7B2B188787A384B5054139F /* Pods_PhoneBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F970FCBAA3786FFE2A5DF9D /* Pods_PhoneBook.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21FF32431D454F230056DBF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				21FF32421D454F230056DBF1 /* RealmSwift.framework in Embed Frameworks */,
+				21FF32401D454F230056DBF1 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F970FCBAA3786FFE2A5DF9D /* Pods_PhoneBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoneBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2103AEA91D45473800D44DF3 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Model/Country/Country.swift; sourceTree = "<group>"; };
+		2103AEAF1D45478D00D44DF3 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManager.swift; path = APIManager/APIManager.swift; sourceTree = "<group>"; };
+		210670DD1D46059700EC9DA7 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseModel.swift; path = Model/BaseModel/BaseModel.swift; sourceTree = "<group>"; };
+		210670E11D4605E200EC9DA7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User/User.swift; sourceTree = "<group>"; };
+		210670E41D46060F00EC9DA7 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Model/Contact/Contact.swift; sourceTree = "<group>"; };
+		210670E61D46149200EC9DA7 /* Dimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dimensions.swift; path = Config/Dimensions.swift; sourceTree = "<group>"; };
+		210670E91D46163200EC9DA7 /* SearchEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchEngine.swift; path = SearchEngine/SearchEngine.swift; sourceTree = "<group>"; };
+		210830721D4252200033FE7F /* PhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2108307A1D4252200033FE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2108307C1D4252200033FE7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2108307F1D4252200033FE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		210830811D4252200033FE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2108308F1D42529D0033FE7F /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = Controller/BaseController/BaseController.swift; sourceTree = "<group>"; };
+		210830931D4252EB0033FE7F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppDelegate/AppDelegate.swift; sourceTree = "<group>"; };
+		210830971D42534C0033FE7F /* PhoneBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhoneBookViewController.swift; path = Controller/PhoneBookViewController/PhoneBookViewController.swift; sourceTree = "<group>"; };
+		2108309C1D42557C0033FE7F /* NewContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewContactViewController.swift; path = Controller/NewContactViewController/NewContactViewController.swift; sourceTree = "<group>"; };
+		2108309F1D425BE30033FE7F /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountriesViewController.swift; path = Controller/CountriesViewController/CountriesViewController.swift; sourceTree = "<group>"; };
+		210830A21D425C1E0033FE7F /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = Config/App.swift; sourceTree = "<group>"; };
+		21C32AE31D45244700AA20E3 /* PBTextFIeld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PBTextFIeld.swift; path = View/PBTextField/PBTextFIeld.swift; sourceTree = "<group>"; };
+		21FF323D1D454F230056DBF1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Libs/Realm/Realm.framework; sourceTree = "<group>"; };
+		21FF323E1D454F230056DBF1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Libs/Realm/RealmSwift.framework; sourceTree = "<group>"; };
+		4E84B6ABA617CD8D4882BE33 /* Pods-PhoneBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneBook/Pods-PhoneBook.debug.xcconfig"; sourceTree = "<group>"; };
+		930C7605AEF6CC54FFCC2403 /* Pods-PhoneBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhoneBook/Pods-PhoneBook.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2108306F1D4252200033FE7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FF323F1D454F230056DBF1 /* Realm.framework in Frameworks */,
+				C7B2B188787A384B5054139F /* Pods_PhoneBook.framework in Frameworks */,
+				21FF32411D454F230056DBF1 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2103AEA81D45470100D44DF3 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				2103AEA91D45473800D44DF3 /* Country.swift */,
+			);
+			name = Country;
+			sourceTree = "<group>";
+		};
+		2103AEAE1D45478600D44DF3 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				2103AEAF1D45478D00D44DF3 /* APIManager.swift */,
+			);
+			name = APIManager;
+			sourceTree = "<group>";
+		};
+		210670DB1D46055600EC9DA7 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				21FF323D1D454F230056DBF1 /* Realm.framework */,
+				21FF323E1D454F230056DBF1 /* RealmSwift.framework */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		210670DC1D46058500EC9DA7 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				210670E11D4605E200EC9DA7 /* User.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		210670E31D4605FE00EC9DA7 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				210670E41D46060F00EC9DA7 /* Contact.swift */,
+			);
+			name = Contact;
+			sourceTree = "<group>";
+		};
+		210670E81D46161500EC9DA7 /* SearchEngine */ = {
+			isa = PBXGroup;
+			children = (
+				210670E91D46163200EC9DA7 /* SearchEngine.swift */,
+			);
+			name = SearchEngine;
+			sourceTree = "<group>";
+		};
+		210830691D4252200033FE7F = {
+			isa = PBXGroup;
+			children = (
+				210830741D4252200033FE7F /* PhoneBook */,
+				210830731D4252200033FE7F /* Products */,
+				ADB8CCD464266D9FAE1F96CA /* Pods */,
+				EA891D4D937E24FCDEB6A4D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		210830731D4252200033FE7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				210830721D4252200033FE7F /* PhoneBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		210830741D4252200033FE7F /* PhoneBook */ = {
+			isa = PBXGroup;
+			children = (
+				210830891D4252700033FE7F /* Model */,
+				210830881D42526C0033FE7F /* View */,
+				210830871D4252670033FE7F /* Controller */,
+				210830791D4252200033FE7F /* Main.storyboard */,
+				2108307E1D4252200033FE7F /* LaunchScreen.storyboard */,
+				210830911D4252D70033FE7F /* Supporting Files */,
+			);
+			path = PhoneBook;
+			sourceTree = "<group>";
+		};
+		210830871D4252670033FE7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2108309E1D425BC50033FE7F /* CountriesViewController */,
+				210830991D42554C0033FE7F /* NewContactViewController */,
+				210830961D42531F0033FE7F /* PhoneBookViewController */,
+				2108308C1D4252830033FE7F /* BaseController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		210830881D42526C0033FE7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21C32AE21D45243400AA20E3 /* PBTextField */,
+				2108308B1D42527D0033FE7F /* BaseView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		210830891D4252700033FE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				210670DC1D46058500EC9DA7 /* User */,
+				210670E31D4605FE00EC9DA7 /* Contact */,
+				2103AEA81D45470100D44DF3 /* Country */,
+				2108308A1D4252760033FE7F /* BaseModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2108308A1D4252760033FE7F /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				210670DD1D46059700EC9DA7 /* BaseModel.swift */,
+			);
+			name = BaseModel;
+			sourceTree = "<group>";
+		};
+		2108308B1D42527D0033FE7F /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BaseView;
+			sourceTree = "<group>";
+		};
+		2108308C1D4252830033FE7F /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				2108308F1D42529D0033FE7F /* BaseController.swift */,
+			);
+			name = BaseController;
+			sourceTree = "<group>";
+		};
+		210830911D4252D70033FE7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				210670E81D46161500EC9DA7 /* SearchEngine */,
+				210670DB1D46055600EC9DA7 /* Libs */,
+				2103AEAE1D45478600D44DF3 /* APIManager */,
+				210830A11D425C0E0033FE7F /* Config */,
+				210830921D4252E10033FE7F /* AppDelegate */,
+				210830951D4252F80033FE7F /* Assets */,
+				210830811D4252200033FE7F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		210830921D4252E10033FE7F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				210830931D4252EB0033FE7F /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		210830951D4252F80033FE7F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2108307C1D4252200033FE7F /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		210830961D42531F0033FE7F /* PhoneBookViewController */ = {
+			isa = PBXGroup;
+			children = (
+				210830971D42534C0033FE7F /* PhoneBookViewController.swift */,
+			);
+			name = PhoneBookViewController;
+			sourceTree = "<group>";
+		};
+		210830991D42554C0033FE7F /* NewContactViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2108309C1D42557C0033FE7F /* NewContactViewController.swift */,
+			);
+			name = NewContactViewController;
+			sourceTree = "<group>";
+		};
+		2108309E1D425BC50033FE7F /* CountriesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2108309F1D425BE30033FE7F /* CountriesViewController.swift */,
+			);
+			name = CountriesViewController;
+			sourceTree = "<group>";
+		};
+		210830A11D425C0E0033FE7F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				210830A21D425C1E0033FE7F /* App.swift */,
+				210670E61D46149200EC9DA7 /* Dimensions.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		21C32AE21D45243400AA20E3 /* PBTextField */ = {
+			isa = PBXGroup;
+			children = (
+				21C32AE31D45244700AA20E3 /* PBTextFIeld.swift */,
+			);
+			name = PBTextField;
+			sourceTree = "<group>";
+		};
+		ADB8CCD464266D9FAE1F96CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E84B6ABA617CD8D4882BE33 /* Pods-PhoneBook.debug.xcconfig */,
+				930C7605AEF6CC54FFCC2403 /* Pods-PhoneBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA891D4D937E24FCDEB6A4D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F970FCBAA3786FFE2A5DF9D /* Pods_PhoneBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		210830711D4252200033FE7F /* PhoneBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 210830841D4252200033FE7F /* Build configuration list for PBXNativeTarget "PhoneBook" */;
+			buildPhases = (
+				82B9A45F2469D5AB901D7F62 /* Check Pods Manifest.lock */,
+				2108306E1D4252200033FE7F /* Sources */,
+				2108306F1D4252200033FE7F /* Frameworks */,
+				210830701D4252200033FE7F /* Resources */,
+				031FB798EC5D1A04268BCA37 /* Embed Pods Frameworks */,
+				F39370964BAC3A925F5BF342 /* Copy Pods Resources */,
+				21FF32361D454E940056DBF1 /* ShellScript */,
+				21FF32431D454F230056DBF1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneBook;
+			productName = PhoneBook;
+			productReference = 210830721D4252200033FE7F /* PhoneBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2108306A1D4252200033FE7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Dimitar Kostov";
+				TargetAttributes = {
+					210830711D4252200033FE7F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2108306D1D4252200033FE7F /* Build configuration list for PBXProject "PhoneBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 210830691D4252200033FE7F;
+			productRefGroup = 210830731D4252200033FE7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				210830711D4252200033FE7F /* PhoneBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		210830701D4252200033FE7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210830801D4252200033FE7F /* LaunchScreen.storyboard in Resources */,
+				2108307D1D4252200033FE7F /* Assets.xcassets in Resources */,
+				2108307B1D4252200033FE7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		031FB798EC5D1A04268BCA37 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneBook/Pods-PhoneBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21FF32361D454E940056DBF1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"PhoneBook/Libs/Realm/Realm.framework/strip-frameworks.sh\"";
+		};
+		82B9A45F2469D5AB901D7F62 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F39370964BAC3A925F5BF342 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhoneBook/Pods-PhoneBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2108306E1D4252200033FE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210670E51D46060F00EC9DA7 /* Contact.swift in Sources */,
+				210830981D42534C0033FE7F /* PhoneBookViewController.swift in Sources */,
+				210830941D4252EB0033FE7F /* AppDelegate.swift in Sources */,
+				210670EA1D46163200EC9DA7 /* SearchEngine.swift in Sources */,
+				2108309D1D42557C0033FE7F /* NewContactViewController.swift in Sources */,
+				2103AEB01D45478D00D44DF3 /* APIManager.swift in Sources */,
+				210670DE1D46059700EC9DA7 /* BaseModel.swift in Sources */,
+				210830A31D425C1E0033FE7F /* App.swift in Sources */,
+				2103AEAA1D45473800D44DF3 /* Country.swift in Sources */,
+				210670E71D46149200EC9DA7 /* Dimensions.swift in Sources */,
+				210830A01D425BE30033FE7F /* CountriesViewController.swift in Sources */,
+				21C32AE41D45244700AA20E3 /* PBTextFIeld.swift in Sources */,
+				210830901D42529D0033FE7F /* BaseController.swift in Sources */,
+				210670E21D4605E200EC9DA7 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		210830791D4252200033FE7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2108307A1D4252200033FE7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2108307E1D4252200033FE7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2108307F1D4252200033FE7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		210830821D4252200033FE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		210830831D4252200033FE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		210830851D4252200033FE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E84B6ABA617CD8D4882BE33 /* Pods-PhoneBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhoneBook/Libs/Realm",
+				);
+				INFOPLIST_FILE = PhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ko100v.com.PhoneBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		210830861D4252200033FE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930C7605AEF6CC54FFCC2403 /* Pods-PhoneBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PhoneBook/Libs/Realm",
+				);
+				INFOPLIST_FILE = PhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ko100v.com.PhoneBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2108306D1D4252200033FE7F /* Build configuration list for PBXProject "PhoneBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210830821D4252200033FE7F /* Debug */,
+				210830831D4252200033FE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		210830841D4252200033FE7F /* Build configuration list for PBXNativeTarget "PhoneBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210830851D4252200033FE7F /* Debug */,
+				210830861D4252200033FE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2108306A1D4252200033FE7F /* Project object */;
+}
